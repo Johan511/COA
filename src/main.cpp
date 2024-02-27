@@ -6,15 +6,16 @@ using namespace std;
 
 int main(){
     cout<<"running"<<"\n";
-    Priority_Queue<int> pq(3,NUM_LEVELS);
+    Priority_Queue<int> pq(10000,NUM_LEVELS);
     vector<int> v;
+    
     
     for(int i = 1 ;i<8;i++){    
         int x;
         cin>>x;
         pq.insert(x);
     }
-
+    
     cout<<"least element:"<<pq.delete_min();
 
     if(info == 1){
